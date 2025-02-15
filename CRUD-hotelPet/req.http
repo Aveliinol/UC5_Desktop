@@ -1,0 +1,31 @@
+### Rota para Listar Pets
+GET http://localhost:3000/
+Content-Type: application/json
+
+### Rota para Listar Pets por id
+GET http://localhost:3000/pet/2
+Content-Type: application/json
+
+### Salvar pet
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "id":2,
+    "nome": "Robson",
+    "especie": "Gato",
+    "raca": "Sphynx",
+    "status": "em estadia",
+    "dono": "Victoria"
+}
+
+### Atualiar Status
+PUT http://localhost:3000/2
+Content-Type: application/json
+
+{
+    "novoStatus": "check-out"
+}
+
+### Delete registro
+DELETE http://localhost:3000/2
